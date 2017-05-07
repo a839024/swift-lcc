@@ -50,9 +50,9 @@ func timeTest(sec: Int! = 200) -> [Int]{
     timepair.updateValue(sec % 60, forKey: "second")
     print(timepair["hour"]!)
     //normal
-    var hour = sec/3600
-    var minute = sec % 3600 / 60
-    var second = sec % 60
+    let hour = sec/3600
+    let minute = sec % 3600 / 60
+    let second = sec % 60
     print("時：\(hour) 分：\(minute) 秒：\(second)")
     return time
 }
@@ -148,7 +148,7 @@ print(total)
 
 //homework
 func bmiCalc(weight: Double, height: Double){
-    var bmi = weight/((height/100)*(height/100))
+    let bmi = weight/((height/100)*(height/100))
     if bmi < 18{
         print("過輕： \(bmi)")
     }else if bmi > 24{
