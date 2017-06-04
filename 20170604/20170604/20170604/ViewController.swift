@@ -4,16 +4,15 @@ class ViewController: UIViewController {
 
     @IBOutlet var imgShow: UIImageView!
 
-    @IBOutlet var btn01: UIButton!
-    @IBOutlet var btn02: UIButton!
-    @IBOutlet var btn03: UIButton!
-    @IBOutlet var btn04: UIButton!
-    @IBOutlet var btn05: UIButton!
-    @IBOutlet var btn06: UIButton!
+
     let imgs:Array = ["img01.jpg", "img02.jpg", "img03.jpg", "img04.jpg", "img05.jpg", "img06.jpg"]
     var imageName:String = "img01.jpg"
     var imageArray: Array<UIImage> = []
 
+    //date time
+    @IBOutlet var datePicker: UIDatePicker!
+    var df = DateFormatter()
+    @IBOutlet var labelShow: UILabel!
 
     //let imgs: [String: UIButton] = ["img01.jpg": btn01, "img01.jpg": btn02, "img01.jpg": btn03, "img01.jpg": btn04, "img01.jpg": btn05, "img01.jpg": btn06]
 
@@ -100,6 +99,49 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func borderClick(_ sender: UIButton) {
+        imgShow.layer.borderColor = UIColor.red.cgColor
+        imgShow.layer.borderWidth = 5
+
+        imgShow.layer.shadowOpacity = 0
+        imgShow.layer.cornerRadius = 0
+
+    }
+
+
+    @IBAction func cornerClick(_ sender: UIButton) {
+        imgShow.layer.cornerRadius = 30
+        imgShow.layer.masksToBounds = true
+
+        imgShow.layer.borderWidth = 0
+        imgShow.layer.shadowOpacity = 0
+    }
+
+
+    @IBAction func shadowClick(_ sender: UIButton) {
+        imgShow.layer.shadowColor = UIColor.black.cgColor
+        imgShow.layer.shadowOffset = CGSize(width: 15, height: -15)
+        imgShow.layer.shadowRadius = 8
+        imgShow.layer.shadowOpacity = 0.5
+
+        imgShow.layer.masksToBounds = false
+        imgShow.layer.borderWidth = 0
+
+    }
+
+
+    @IBAction func normalClick(_ sender: UIButton) {
+        imgShow.layer.masksToBounds = false
+        imgShow.layer.borderWidth = 0
+        imgShow.layer.shadowOpacity = 0
+    }
+
+
+    @IBAction func dateChange(_ sender: UIDatePicker) {
+        labelShow.text = df.string(from: datePicker.date)
+    }
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -111,6 +153,15 @@ class ViewController: UIViewController {
 
         imgShow.animationImages = imageArray
         imgShow.animationDuration = 12
+        imgShow.animationRepeatCount = 1
+
+        datePicker.datePickerMode = UIDatePickerMode.dateAndTime
+        datePicker.locale = Locale(identifier: "zh_TW")
+        datePicker.date = Date()
+
+        df.dateStyle = DateFormatter.Style.medium
+        df.dateFormat = "西元 yyyy年 MM月 d日 hh時 mm分 ss秒"
+        labelShow.text = df.string(from: datePicker.date)
     }
 
     override func didReceiveMemoryWarning() {
