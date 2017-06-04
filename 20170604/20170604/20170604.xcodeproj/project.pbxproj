@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		430D5F061EE3A382006AF052 /* img01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 430D5F001EE3A382006AF052 /* img01.jpg */; };
+		430D5F071EE3A382006AF052 /* img02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 430D5F011EE3A382006AF052 /* img02.jpg */; };
+		430D5F081EE3A382006AF052 /* img03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 430D5F021EE3A382006AF052 /* img03.jpg */; };
+		430D5F091EE3A382006AF052 /* img04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 430D5F031EE3A382006AF052 /* img04.jpg */; };
+		430D5F0A1EE3A382006AF052 /* img05.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 430D5F041EE3A382006AF052 /* img05.jpg */; };
+		430D5F0B1EE3A382006AF052 /* img06.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 430D5F051EE3A382006AF052 /* img06.jpg */; };
 		43BD071C1EE40E370083F0D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BD071B1EE40E370083F0D3 /* AppDelegate.swift */; };
 		43BD071E1EE40E370083F0D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BD071D1EE40E370083F0D3 /* ViewController.swift */; };
 		43BD07211EE40E370083F0D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43BD071F1EE40E370083F0D3 /* Main.storyboard */; };
@@ -34,6 +40,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		430D5F001EE3A382006AF052 /* img01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img01.jpg; sourceTree = "<group>"; };
+		430D5F011EE3A382006AF052 /* img02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img02.jpg; sourceTree = "<group>"; };
+		430D5F021EE3A382006AF052 /* img03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img03.jpg; sourceTree = "<group>"; };
+		430D5F031EE3A382006AF052 /* img04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img04.jpg; sourceTree = "<group>"; };
+		430D5F041EE3A382006AF052 /* img05.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img05.jpg; sourceTree = "<group>"; };
+		430D5F051EE3A382006AF052 /* img06.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img06.jpg; sourceTree = "<group>"; };
 		43BD07181EE40E370083F0D3 /* 20170604.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 20170604.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43BD071B1EE40E370083F0D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43BD071D1EE40E370083F0D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +86,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		430D5EFF1EE3A382006AF052 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				430D5F001EE3A382006AF052 /* img01.jpg */,
+				430D5F011EE3A382006AF052 /* img02.jpg */,
+				430D5F021EE3A382006AF052 /* img03.jpg */,
+				430D5F031EE3A382006AF052 /* img04.jpg */,
+				430D5F041EE3A382006AF052 /* img05.jpg */,
+				430D5F051EE3A382006AF052 /* img06.jpg */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		43BD070F1EE40E370083F0D3 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +128,7 @@
 				43BD07221EE40E370083F0D3 /* Assets.xcassets */,
 				43BD07241EE40E370083F0D3 /* LaunchScreen.storyboard */,
 				43BD07271EE40E370083F0D3 /* Info.plist */,
+				430D5EFF1EE3A382006AF052 /* images */,
 			);
 			path = 20170604;
 			sourceTree = "<group>";
@@ -232,9 +258,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				430D5F091EE3A382006AF052 /* img04.jpg in Resources */,
 				43BD07261EE40E370083F0D3 /* LaunchScreen.storyboard in Resources */,
+				430D5F0A1EE3A382006AF052 /* img05.jpg in Resources */,
+				430D5F071EE3A382006AF052 /* img02.jpg in Resources */,
+				430D5F081EE3A382006AF052 /* img03.jpg in Resources */,
 				43BD07231EE40E370083F0D3 /* Assets.xcassets in Resources */,
+				430D5F061EE3A382006AF052 /* img01.jpg in Resources */,
 				43BD07211EE40E370083F0D3 /* Main.storyboard in Resources */,
+				430D5F0B1EE3A382006AF052 /* img06.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,6 +537,7 @@
 				43BD07421EE40E380083F0D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		43BD07431EE40E380083F0D3 /* Build configuration list for PBXNativeTarget "20170604Tests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +546,7 @@
 				43BD07451EE40E380083F0D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		43BD07461EE40E380083F0D3 /* Build configuration list for PBXNativeTarget "20170604UITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +555,7 @@
 				43BD07481EE40E380083F0D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
