@@ -14,6 +14,7 @@
 		43AD34591EED0B4A007C5306 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43AD34571EED0B4A007C5306 /* LaunchScreen.storyboard */; };
 		43AD34641EED0B4B007C5306 /* _0170611Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AD34631EED0B4B007C5306 /* _0170611Tests.swift */; };
 		43AD346F1EED0B4B007C5306 /* _0170611UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AD346E1EED0B4B007C5306 /* _0170611UITests.swift */; };
+		43AD347E1EED0E47007C5306 /* img.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 43AD347D1EED0E47007C5306 /* img.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		43AD346A1EED0B4B007C5306 /* 20170611UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 20170611UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		43AD346E1EED0B4B007C5306 /* _0170611UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _0170611UITests.swift; sourceTree = "<group>"; };
 		43AD34701EED0B4B007C5306 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43AD347D1EED0E47007C5306 /* img.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				43AD34551EED0B4A007C5306 /* Assets.xcassets */,
 				43AD34571EED0B4A007C5306 /* LaunchScreen.storyboard */,
 				43AD345A1EED0B4A007C5306 /* Info.plist */,
+				43AD347C1EED0E47007C5306 /* images */,
 			);
 			path = 20170611;
 			sourceTree = "<group>";
@@ -123,6 +126,14 @@
 				43AD34701EED0B4B007C5306 /* Info.plist */,
 			);
 			path = 20170611UITests;
+			sourceTree = "<group>";
+		};
+		43AD347C1EED0E47007C5306 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				43AD347D1EED0E47007C5306 /* img.jpg */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +246,7 @@
 				43AD34591EED0B4A007C5306 /* LaunchScreen.storyboard in Resources */,
 				43AD34561EED0B4A007C5306 /* Assets.xcassets in Resources */,
 				43AD34541EED0B4A007C5306 /* Main.storyboard in Resources */,
+				43AD347E1EED0E47007C5306 /* img.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
