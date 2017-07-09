@@ -76,12 +76,18 @@ class ViewController: UIViewController {
             print("complete")
         })
     }
+    @IBOutlet var myWebView: UIWebView!
 
-
+    func prepareForWebView(){
+        let url: URL = URL(string: "http://www.lccnet.com.tw")!
+        let request: URLRequest = URLRequest(url: url)
+        myWebView.loadRequest(request)
+    }
 
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        prepareForWebView()
     }
 
     override func didReceiveMemoryWarning() {
