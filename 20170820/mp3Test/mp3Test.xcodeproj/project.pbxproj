@@ -7,15 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4305656C1F525F6800E3293A /* greensleeves.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 430565671F525F6800E3293A /* greensleeves.mp3 */; };
+		4305656D1F525F6800E3293A /* mario.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 430565681F525F6800E3293A /* mario.mp3 */; };
+		4305656E1F525F6800E3293A /* songbird.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 430565691F525F6800E3293A /* songbird.mp3 */; };
+		4305656F1F525F6800E3293A /* summersong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4305656A1F525F6800E3293A /* summersong.mp3 */; };
+		430565701F525F6800E3293A /* tradewinds.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4305656B1F525F6800E3293A /* tradewinds.mp3 */; };
 		4369146E1F49772800199DF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4369146D1F49772800199DF6 /* AppDelegate.swift */; };
 		436914701F49772800199DF6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4369146F1F49772800199DF6 /* ViewController.swift */; };
 		436914731F49772800199DF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 436914711F49772800199DF6 /* Main.storyboard */; };
 		436914751F49772800199DF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 436914741F49772800199DF6 /* Assets.xcassets */; };
 		436914781F49772800199DF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 436914761F49772800199DF6 /* LaunchScreen.storyboard */; };
-		436914801F4977CF00199DF6 /* mario.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4369147F1F4977CF00199DF6 /* mario.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		430565671F525F6800E3293A /* greensleeves.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = greensleeves.mp3; sourceTree = "<group>"; };
+		430565681F525F6800E3293A /* mario.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mario.mp3; sourceTree = "<group>"; };
+		430565691F525F6800E3293A /* songbird.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = songbird.mp3; sourceTree = "<group>"; };
+		4305656A1F525F6800E3293A /* summersong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = summersong.mp3; sourceTree = "<group>"; };
+		4305656B1F525F6800E3293A /* tradewinds.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tradewinds.mp3; sourceTree = "<group>"; };
 		4369146A1F49772800199DF6 /* mp3Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mp3Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4369146D1F49772800199DF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4369146F1F49772800199DF6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -23,7 +32,6 @@
 		436914741F49772800199DF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		436914771F49772800199DF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		436914791F49772800199DF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4369147F1F4977CF00199DF6 /* mario.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mario.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +45,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		430565661F525F6800E3293A /* music */ = {
+			isa = PBXGroup;
+			children = (
+				430565671F525F6800E3293A /* greensleeves.mp3 */,
+				430565681F525F6800E3293A /* mario.mp3 */,
+				430565691F525F6800E3293A /* songbird.mp3 */,
+				4305656A1F525F6800E3293A /* summersong.mp3 */,
+				4305656B1F525F6800E3293A /* tradewinds.mp3 */,
+			);
+			path = music;
+			sourceTree = "<group>";
+		};
 		436914611F49772800199DF6 = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +76,9 @@
 		4369146C1F49772800199DF6 /* mp3Test */ = {
 			isa = PBXGroup;
 			children = (
+				430565661F525F6800E3293A /* music */,
 				4369146D1F49772800199DF6 /* AppDelegate.swift */,
 				4369146F1F49772800199DF6 /* ViewController.swift */,
-				4369147F1F4977CF00199DF6 /* mario.mp3 */,
 				436914711F49772800199DF6 /* Main.storyboard */,
 				436914741F49772800199DF6 /* Assets.xcassets */,
 				436914761F49772800199DF6 /* LaunchScreen.storyboard */,
@@ -126,10 +146,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4305656E1F525F6800E3293A /* songbird.mp3 in Resources */,
+				430565701F525F6800E3293A /* tradewinds.mp3 in Resources */,
 				436914781F49772800199DF6 /* LaunchScreen.storyboard in Resources */,
+				4305656F1F525F6800E3293A /* summersong.mp3 in Resources */,
 				436914751F49772800199DF6 /* Assets.xcassets in Resources */,
+				4305656D1F525F6800E3293A /* mario.mp3 in Resources */,
+				4305656C1F525F6800E3293A /* greensleeves.mp3 in Resources */,
 				436914731F49772800199DF6 /* Main.storyboard in Resources */,
-				436914801F4977CF00199DF6 /* mario.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +327,7 @@
 				4369147E1F49772800199DF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
